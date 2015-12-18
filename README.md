@@ -39,6 +39,26 @@ Replace the stock `ConfigureLogging` bootstrapper with a the custom implementati
     ];
 ```
 
+Aaaand in `app/Console/Kernel.php`:
+
+```php
+    /**
+     * The bootstrap classes for the application.
+     *
+     * @var array
+     */
+    protected $bootstrappers = [
+        'Illuminate\Foundation\Bootstrap\DetectEnvironment',
+        'Illuminate\Foundation\Bootstrap\LoadConfiguration',
+        'CedricZiel\AppEngineMvmLoghandler\LoggingConfiguration',
+        'Illuminate\Foundation\Bootstrap\HandleExceptions',
+        'Illuminate\Foundation\Bootstrap\RegisterFacades',
+        'Illuminate\Foundation\Bootstrap\SetRequestForConsole',
+        'Illuminate\Foundation\Bootstrap\RegisterProviders',
+        'Illuminate\Foundation\Bootstrap\BootProviders',
+    ];
+```
+
 Use the log-handler in `.env`:
 
 ```
