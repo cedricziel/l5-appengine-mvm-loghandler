@@ -1,5 +1,8 @@
 # l5-appengine-mvm-loghandler
 
+[![Dependency 
+Status](https://www.versioneye.com/user/projects/56a780b57e03c700377debf7/badge.svg?style=flat)](https://www.versioneye.com/user/projects/56a780b57e03c700377debf7)
+
 Google AppEngine Managed VMs LogHandler.
 
 ## Instructions
